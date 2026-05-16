@@ -1,0 +1,10 @@
+{
+  "id": "transcripcion-obsidian",
+  "name": "Transcripción Obsidian",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Grabá y transcribí audios con identificación de hablantes usando Gladia, Deepgram o AssemblyAI",
+  "author": "Jesús García & DeepSeek V4-Pro",
+  "authorUrl": "https://github.com/jaliriogbarrios19/Transcripcion-Obsidian",
+  "isDesktopOnly": false
+}
