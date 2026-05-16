@@ -131,6 +131,10 @@ export default class DiaryTranscriberPlugin extends Plugin {
         speakerNames: speakerMapping.names,
         language: this.settings.defaultLanguage,
         signal: controller.signal,
+        model:
+          this.settings.provider === "assemblyai"
+            ? this.settings.assemblyaiModel
+            : undefined,
       });
 
       const formatted = this.formatTranscription(

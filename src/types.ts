@@ -9,6 +9,7 @@ export interface TranscriptionOptions {
   speakerNames: string[];
   language?: string;
   signal?: AbortSignal;
+  model?: string;
 }
 
 export interface SpeakerMapping {

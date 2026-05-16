@@ -7,6 +7,7 @@ export interface PluginSettings {
   gladiaApiKey: string;
   deepgramApiKey: string;
   assemblyaiApiKey: string;
+  assemblyaiModel: "universal-2" | "universal-3";
   defaultLanguage: string;
   insertAsCallout: boolean;
 }
@@ -16,6 +17,7 @@ export const DEFAULT_SETTINGS: PluginSettings = {
   gladiaApiKey: "",
   deepgramApiKey: "",
   assemblyaiApiKey: "",
+  assemblyaiModel: "universal-3",
   defaultLanguage: "es",
   insertAsCallout: true,
 };
@@ -61,6 +63,24 @@ export class SettingsTab extends PluginSettingTab {
         "AssemblyAI API Key",
         "assemblyaiApiKey"
       );
+    }
+
+    if (this.plugin.settings.provider === "assemblyai") {
+      new Setting(containerEl)
+        .setName("Modelo")
+        .setDesc("Universal-3: más preciso, speaker diarization mejorada. Universal-2: más rápido y económico.")
+        .addDropdown((dropdown) =>
+          dropdown
+            .addOption("universal-3", "Universal-3")
+            .addOption("universal-2", "Universal-2")
+            .setValue(this.plugin.settings.assemblyaiModel)
+            .onChange(async (v: string) => {
+              this.plugin.settings.assemblyaiModel = v as
+                | "universal-2"
+                | "universal-3";
+              await this.plugin.saveSettings();
+            })
+        );
     }
 
     // Show all keys in an advanced section

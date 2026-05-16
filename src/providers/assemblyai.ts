@@ -38,7 +38,7 @@ export class AssemblyAITranscriber implements Transcriber {
     // 2. Start transcription
     const body: Record<string, unknown> = {
       audio_url: audioUrl,
-      speech_models: ["universal-2"],
+      speech_models: [options.model || "universal-2"],
       speaker_labels: true,
       language_code: options.language || "es",
     };

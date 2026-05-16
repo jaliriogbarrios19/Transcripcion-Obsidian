@@ -25,11 +25,11 @@ Grabá o transcribí audios directamente desde Obsidian con identificación de h
 
 ### ¿Dónde consigo una API key?
 
-| Proveedor | Registro | Precio |
-|-----------|----------|--------|
-| [Gladia](https://app.gladia.io) | Créditos gratis al registrarte | ~$0.50/hora |
-| [Deepgram](https://console.deepgram.com) | $200 en créditos gratis | ~$0.50/hora |
-| [AssemblyAI](https://assemblyai.com) | Horas gratis al registrarte | ~$0.60/hora |
+| Proveedor | Registro | Precios |
+|-----------|----------|---------|
+| [Gladia](https://app.gladia.io) | Créditos gratis al registrarte | [Ver precios](https://www.gladia.io/pricing) |
+| [Deepgram](https://console.deepgram.com) | $200 en créditos gratis | [Ver precios](https://deepgram.com/pricing) |
+| [AssemblyAI](https://assemblyai.com) | Horas gratis al registrarte | [Ver precios](https://www.assemblyai.com/pricing) |
 
 ## Cómo se usa
 
